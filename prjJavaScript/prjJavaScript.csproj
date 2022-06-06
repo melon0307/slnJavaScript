@@ -1,0 +1,255 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{754C528F-00E6-414A-8A8B-BEE407F00073}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>prjJavaScript</RootNamespace>
+    <AssemblyName>prjJavaScript</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44341</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.js" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab01\02getElementContent.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab02\01varDeclaration.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab02\02DataTypes.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab03\01OperatorPrecedence.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab03\02if.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab03\03swicth.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab03\04for.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab03\05while.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab04\01functionMethod.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab04\02varScope.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\01stringObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\02checkPassword.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\03DateObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\04Object.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\05ArrayObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\06Arraysort.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\07JSON.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\08JSONMethod.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\09MathObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\10regExpObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler1.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler2.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler3.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler4.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler5.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\02capturebubble.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\02eventHandlerAttachAdd.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\03eventHandlerMouseoverout.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\04eventHandlerFocusBlur.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\05checkPassword.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\Images\chngstar.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab06\Images\star.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\01dynamicStyle.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\02dynamicStyleImg.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\03dynamicContent.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\04checkPassword.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\05dynamicInsert.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\Images\error.png" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\Images\star.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\Images\star.png" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\03locationObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\04eventObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\04eventObject2.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\05eventObjectKeyboard.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\06eventTargetcurrentTarget.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\07eventBubble.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\08eventObjectDemo.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\09document.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\10NodeListHTMLCollection.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\10querySelector.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\11imageObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\12formObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\get.aspx" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\101.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\102.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\EEIT_logo.png" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\iiiedulogo.png" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\ispan.png" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Kaohsiung.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\map00.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\MapKaohsiung.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\MapTaichung.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\MapTaipei.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\MapTaoyuan.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taichung.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taipei.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taoyuan.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\01setTimeout.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\02setclock.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\0.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\1.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\101.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\106.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\2.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\3.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\4.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\5.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\6.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\7.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\8.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\9.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\01DOM1.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\02DOM2.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\03DOMCreateDelete.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\04DOMFrag.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\05ball.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\DOM\01magic.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\DOM\02magicHard.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\DOM\03magicEasier.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\DOM\04newOption.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\DOM\05createOptionObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\DOM\DOMImage\rabbit-hat.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab09\DOM\DOMImage\topHat.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab10\01dragdrop.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab10\02dragfile.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab10\03dragImage.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\01Cookie.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\02localStorage.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\03sessionStorage.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\cookie\01GetcookiePage.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\cookie\01HomePage.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\cookie\01LoginPage.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\CSharp.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\HTML1.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\HTML2.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JAVA.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JQ1.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JQ1.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JQ2.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JQ2.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JS1.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JS2.png" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\sample_header.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\shopping_cartNew.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄三\01CurrentPosition.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄三\02Google_Map_API_v3.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄三\03showAddress_v3.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄二\01fileRead.html" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄二\02fileReadImage.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MSITLabSrc%2820220529%29\Lab08\get.aspx.cs">
+      <DependentUpon>get.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\get.jsp" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\CSharp.webp" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\HTML1.webp" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\HTML2.webp" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JAVA.webp" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JS1.webp" />
+    <Content Include="MSITLabSrc%2820220529%29\附錄一\shopping_cartNew\image\JS2.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49429</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44341/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
