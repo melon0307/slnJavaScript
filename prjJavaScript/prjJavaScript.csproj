@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\Ninety-nine_multiplication_table.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.js" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\02getElementContent.html" />
