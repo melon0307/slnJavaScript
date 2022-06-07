@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\Form_Check.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\homework.css" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\homework.js" />
     <Content Include="MSITLabSrc%2820220529%29\homework\Ninety-nine_multiplication_table.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.js" />
@@ -81,6 +84,7 @@
     <Content Include="MSITLabSrc%2820220529%29\Lab03\05while.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab04\01functionMethod.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab04\02varScope.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab04\IIFE.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\01stringObject.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\02checkPassword.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\03DateObject.html" />

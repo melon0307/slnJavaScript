@@ -6,14 +6,39 @@
 </head>
 <body>
     <script>
-            //廣域(全域)變數
-    
-    
-            //函數宣告定義
-    
-    
-            //呼叫函數
+        ////case1
+        ////廣域(全域)變數
+        //var a = 100;
 
+        ////函數宣告定義
+        //function f() {
+        //    var a = 10;
+        //    console.log(`function in a =${a}`);//此處呼叫的a為local變數
+        //    console.log(`window.a =${window.a}`);//若想呼叫global的a，則必須使用window.a
+        //    console.log(`this.a =${this.a}`); //this = window
+        //}
+
+        ////呼叫函數
+        //console.log(`call function before a =${a}`);//此處呼叫的a為global變數
+        //f();
+        //console.log(`call function after a =${a}`);//此處呼叫的a為global變數
+
+        //case2
+        //廣域(全域)變數
+        var a = 100;//此處的a為global變數
+
+        //函數宣告定義
+        function f() {
+            var a = 10;//此處的a為local變數
+            for (let a = 1; a <= 3; a++) {//此處的let a為block變數
+                console.log(`${a}`);
+            }
+        }
+
+        //呼叫函數
+        console.log(`call function before a =${a}`);
+        f();
+        console.log(`call function after a =${a}`);
 
     </script>
 </body>

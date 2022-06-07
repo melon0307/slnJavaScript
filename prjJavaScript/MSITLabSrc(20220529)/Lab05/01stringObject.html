@@ -7,19 +7,22 @@
 <body>
     <div id="info"></div>
     <script>
-        let str = "java script";  //字串變數        
+        let str = "java script";  //字串變數
         //字串物件
-
-        console.log("strObj.charAt(3)=");
-        console.log("strObj.charCodeAt(3)=");
-        console.log("strObj.indexOf('a')=");
-        console.log("strObj.lastIndexOf('a')=");
-        console.log("strObj.lastIndexOf('@')=");
-        console.log("strObj.substr(5,3)=");
-        console.log("strObj.substr(5)=");
-        console.log("strObj.substring(5,8)=");
-        console.log("strObj.split(' ')=");
-        console.log("strObj.toUpperCase()=");
+        let strObj = new String("java Script hello");
+        console.log(typeof strObj);
+        console.log("strObj.charAt(3)=" + strObj.charAt(3));//a
+        console.log("strObj.charCodeAt(3)=" + strObj.charCodeAt(3));//97
+        console.log("strObj.indexOf('a')=" + strObj.indexOf('a'));//1
+        console.log("strObj.lastIndexOf('a')=" + strObj.lastIndexOf('a'));//3
+        console.log("strObj.lastIndexOf('@')=" + strObj.lastIndexOf('@'));//-1 (找不到回傳-1)
+        console.log("strObj.substr(5,3)=" + strObj.substr(5, 3));//index(5)後面3個index Scr
+        console.log("strObj.substr(5)=" + strObj.substr(5));//index(5)開始後面的char Script hello
+        console.log("strObj.substring(5,8)=" + strObj.substring(5, 8));//index(5)到index(8) Scr
+        console.log("strObj.split(' ')=" + strObj.split(' ');//用' '(空白)分割(結果為陣列)java,Script,hello(此處結果為字串原因為字串相加結果為字串)
+        let strArray = strObj.split(' ');
+        console.log(strArray)//顯示陣列
+        console.log("strObj.toUpperCase()=" + str.Obj.toUpperCase());//大寫
     </script>
 </body>
 </html>

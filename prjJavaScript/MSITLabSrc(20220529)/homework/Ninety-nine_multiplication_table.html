@@ -3,12 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <style>
-        
-        table{margin:auto;border:3px #66B3FF solid;border-collapse:collapse;background-color:#CAFFFF;color:red}
-        td{border:3px #66B3FF solid}
-    </style>
-
+    <link href="homework.css" rel="stylesheet" />
 </head>
 <body>
     <div id="div">
@@ -25,9 +20,10 @@
         //    a.innerHTML += "</td>"; 
         //}
         //a.innerHTML+="</tr></table>"
-        document.write("<table><tr>");
+
+        document.write(`<table class="tb1"><tr>`);
         for (var i = 1; i < 10; i++) {
-            document.write("<td>");
+            document.write(`<td class="td1">`);
             for (var j = 1; j < 10; j++) {
                 document.write(`${i}*${j}=${i * j}<br>`);
             }
