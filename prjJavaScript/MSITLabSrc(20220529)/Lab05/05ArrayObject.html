@@ -7,18 +7,42 @@
 <body>
     <script>
         //Array 物件
+        let sports = ["baseball", "basketball", "tennis", 123];
+        for (let sport of sports) {
 
+        }
 
         
-        //let myfoods = [["apple", "banana", "grape"], ["pork", "beef"]];
+        let myfoods = [["apple", "banana", "grape"], ["pork", "beef"]];
         // for (let i = 0, maxi = myfoods.length; i < maxi; i++) {
         //     for (let j = 0, maxj = myfoods[i].length; j < maxj; j++) {
         //         console.log(myfoods[i][j]);
         //     }
         // }
 
+        for (let myfood of myfoods) {
+            console.log(myfood);
+            for (let food of myfood) {
+                console.log(food);
+            }
+        }
+            
         //Array 方法
-        
+        let ary = [1, 2, 3];
+        console.log(sports.concat(ary));
+        console.log(sports.join("-"));
+        console.log(sports.reverse());
+        sports.push("item1", "item2", "item3");
+        console.log(sports);
+        //console.log(sports.push("item1", "item2", "item3"));//10
+        sports.pop();
+        console.log(sports);
+        sports.unshift("football","soccer")
+        console.log(sports);
+
+        console.log(sports.slice(0, 4));
+        sports.splice(1, 3, "item4", "item5", "item6");
+        console.log(sports);
     </script>
 </body>
 </html>

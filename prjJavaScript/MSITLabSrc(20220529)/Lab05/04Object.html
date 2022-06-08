@@ -7,11 +7,22 @@
 <body>
     <div id="myDiv"></div>
     <script>
-    
-    
+        let cars = {
+            brand: "tesla",
+            "max speed": 300,
+            color: "white",
+            display: () => {
+                return `${cars.brand},${cars["max speed"]}`//此處假如this.brand this為window，因此需用cars.brand
+            }
+        }
+        console.log(cars);
+        console.log(cars.display());
 
-    //for..in
-
+        //for..in
+        let myDiv = document.getElementById("myDiv");
+        for (let prop in cars) {
+            myDiv.innerHTML += `<li>cars["${prop}"] = ${cars[prop]}</li>`;
+        }
     
     </script>        
 </body>

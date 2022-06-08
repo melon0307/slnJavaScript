@@ -12,22 +12,22 @@
         /*
             let str="Is this all there is?";
             let re=new RegExp("is","gi");
-            console.log(str.match(re));	
+            console.log(str.match(re));
         */
-            function chkEmail() {
-                //取得元素值
-                let theEmail = document.getElementById("idEmail").value;
-                //建立RegExp物件語法 2
-                let re = /^.+@.+\..{2,3}$/;
-                //建立RegExp物件語法 1
-    
-    
-                if (re.test(theEmail))
-                    window.alert("successful");
-                else
-                    window.alert("failure");
-    
-            }
-        </script>
+        function chkEmail() {
+            //取得元素值
+            let theEmail = document.getElementById("idEmail").value;
+            //建立RegExp物件語法 2
+           /* let re = /^.+@.+\..{2,3}$/;*/
+            //建立RegExp物件語法 1
+            let re = new RegExp("/^.+@.+\\..{2,3}$/");
+
+            if (re.test(theEmail))
+                window.alert("successful");
+            else
+                window.alert("failure");
+
+        }
+    </script>
 </body>
 </html>

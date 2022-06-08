@@ -85,6 +85,7 @@
     <Content Include="MSITLabSrc%2820220529%29\Lab04\01functionMethod.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab04\02varScope.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab04\IIFE.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\01functionMethodAppendix.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\01stringObject.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\02checkPassword.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\03DateObject.html" />
@@ -95,6 +96,9 @@
     <Content Include="MSITLabSrc%2820220529%29\Lab05\08JSONMethod.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\09MathObject.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\10regExpObject.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\checkCode1.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\checkCode2.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\checkCode3.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler1.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler2.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab06\01eventHandler3.html" />
@@ -112,6 +116,7 @@
     <Content Include="MSITLabSrc%2820220529%29\Lab07\03dynamicContent.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab07\04checkPassword.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab07\05dynamicInsert.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab07\css1.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab07\Images\error.png" />
     <Content Include="MSITLabSrc%2820220529%29\Lab07\Images\star.jpg" />
     <Content Include="MSITLabSrc%2820220529%29\Lab07\Images\star.png" />

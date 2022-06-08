@@ -48,8 +48,23 @@
         //data.emps - array             
         //data.emps[0] - object       
         //data.emps[0].name - Tom       
+        console.log(data.emps);//3個陣列
+        console.log(data.emps[0]);//object
+        console.log(data.emps[0].name);
 
-        
+        console.log("===========================");
+
+        let name, wy, salary;
+        let str = "<ul>";
+        for (let value of data.emps) {
+            name = value.name;
+            wy = value.workYears;
+            salary = value.salary;
+            str += `<li>${name},${wy},${salary}</li>`;
+        }
+        str += "</ul>";
+        document.getElementById("div1").innerHTML = str;
+
     </script>
 </body>
 </html>

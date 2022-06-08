@@ -27,8 +27,11 @@
             alert("method 3");
         } 
          
-        document.getElementById("m2").onclick=f2;         
-        document.getElementById("m3").addEventListener("click",f3);         
+        document.getElementById("m2").onclick = f2;
+        document.getElementById("m2").onclick = function () { alert("method 2x"); };
+
+        document.getElementById("m3").addEventListener("click", f3);
+        document.getElementById("m3").addEventListener("click", function () { alert("method 3x"); }, false);
         
     </script>
         
