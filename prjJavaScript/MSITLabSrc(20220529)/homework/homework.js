@@ -54,3 +54,24 @@ function checkPwd() {
         sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">密碼長度需大於6個字</span>`;
 }
 //===================================================================
+
+function checkDate() {
+    let DateObj = document.getElementById("date1");
+    let DateObjVal = DateObj.value;
+    let strArray = DateObjVal.split('/');
+    let theYear = strArray[0];
+    let theMonth = strArray[1]-1;
+    let theDate = strArray[2];
+    let chkDate = new Date(theYear, theMonth, theDate);
+    let inputDate = new Date(DateObjVal);
+    let sp = document.getElementById("span3");
+
+    if (chkDate != "Invalid Date") {
+        if (chkDate.toString() == inputDate.toString())
+            sp.innerHTML = `<i class="bi bi-check-circle"></i><span style="color:green">輸入正確</span>`;
+        else
+            sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">請輸入正確日期</span>`;
+    }
+    else
+        sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">請輸入正確日期</span>`;
+}
