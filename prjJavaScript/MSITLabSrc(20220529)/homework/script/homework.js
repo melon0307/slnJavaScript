@@ -60,18 +60,15 @@ function checkDate() {
     let DateObjVal = DateObj.value;
     let strArray = DateObjVal.split('/');
     let theYear = strArray[0];
-    let theMonth = strArray[1]-1;
+    let theMonth = strArray[1];
     let theDate = strArray[2];
-    let chkDate = new Date(theYear, theMonth, theDate);
-    let inputDate = new Date(DateObjVal);
+    let chkDate = new Date(theYear, theMonth - 1, theDate); 
     let sp = document.getElementById("span3");
-
-    if (chkDate != "Invalid Date") {
-        if (chkDate.toString() == inputDate.toString())
-            sp.innerHTML = `<i class="bi bi-check-circle"></i><span style="color:green">輸入正確</span>`;
-        else
-            sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">請輸入正確日期</span>`;
+    
+    if (chkDate.getFullYear() == theYear && chkDate.getMonth()+1 == theMonth && chkDate.getDate() == theDate) {
+        sp.innerHTML = `<i class="bi bi-check-circle"></i><span style="color:green">輸入正確</span>`;
     }
     else
         sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">請輸入正確日期</span>`;
+
 }

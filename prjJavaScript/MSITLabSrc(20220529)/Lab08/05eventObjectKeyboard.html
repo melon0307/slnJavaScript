@@ -7,8 +7,10 @@
 <body>    
     <script> 
         //鍵盤事件繫結
-        document.addEventListener("keydown", keyDown);  //大寫鍵，控制鍵        
+        document.addEventListener("keydown", keyDown);  //不管大小寫均回傳大寫unicode，可回傳控制鍵        
+        document.addEventListener("keypress", keyDown); //區分大小寫unicode，"不"可回傳控制鍵
         function keyDown(event) {
+            console.log(event.which);
             if (event.altKey) alert("ALT");
             if (event.ctrlKey) alert("CTRL");
             if (event.shiftKey) alert("SHIFT");

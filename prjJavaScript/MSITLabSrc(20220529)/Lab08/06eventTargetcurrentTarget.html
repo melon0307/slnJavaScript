@@ -23,11 +23,13 @@
         //currentTarget：回傳事件正在處理時所在的元素
         //[object class] 一個物件的類別(class)屬性是個字串，提供關於該物件的種類的資訊
         function clickP() {
-            alert("p");            
+            alert("p target =" + event.target.id +
+                "\np currentTarget =" + event.currentTarget.id);;           
         }
 
         function clickBut() {
-            alert("input"); 
+            alert("input target =" + event.target.id +
+                "\ninput currentTarget =" + event.currentTarget.id); 
 
         }
     </script>
