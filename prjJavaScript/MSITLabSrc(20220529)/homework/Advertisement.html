@@ -3,56 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="css/homework.css" rel="stylesheet" />
+    <link href="css/homework.css" rel="stylesheet" />  
+    <script src="script/homework.js" defer></script>
 </head>
-<body class="body1">
-    <div class="box" id="slide">
-
-        <ul class="pic">
-            <li><a href="#"><img class="img" src="images/1.jpg" /></a></li>
-            <li><a href="#"><img class="img" src="images/2.jpg" /></a></li>
-            <li><a href="#"><img class="img" src="images/3.jpg" /></a></li>
-            <li><a href="#"><img class="img" src="images/4.jpg" /></a></li>
-            <li><a href="#"><img class="img" src="images/5.jpg" /></a></li>            
-        </ul>
-        <ul class="list">
-        </ul>
+<body >
+    <div class="container">
+        <div id="slide">
+            <a id="hpl"><img src="images/1.jpg" id="myImg" /></a>
+        </div>
+        <div id="div2">
+            <img src="images/1.jpg" id="0" />
+            <img src="images/2.jpg" id="1" />
+            <img src="images/3.jpg" id="2" />
+            <img src="images/4.jpg" id="3" />
+            <img src="images/5.jpg" id="4" />
+        </div>
     </div>
-    <script>
-        //左右箭頭
-        slide = document.querySelector("#slide");
-        prevBtn = document.createElement("a");
-        nextBtn = document.createElement("a");
-        prevBtn.classList.add("prev");
-        nextBtn.classList.add("next");
-        slide.appendChild(prevBtn);
-        slide.appendChild(nextBtn);
-
-        //生成圓點，點擊事件
-        let pic = document.querySelector('.pic');
-        let list = document.querySelector('.list');
-        for (let i = 0; i < pic.children.length; i++) {
-            let li = document.createElement("li");
-            list.appendChild(li);
-
-            //索引
-            li.setAttribute("index", i);
-            
-            li.addEventListener("click", function () {
-                let index = this.getAttribute("index");
-                num = index;
-                point = index;
-                for (let j = 0; j < list.children.length; j++) {
-                    list.children[j].className = "";
-                }
-                this.className = "selected"
-                ()
-            });
-        }
-        list.children[0].className = "selected";
-        
-        //點選圓點，切換圖片
-
-    </script>
 </body>
 </html>

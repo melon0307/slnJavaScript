@@ -22,7 +22,7 @@
             sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">姓名必須全部為中文</span>`
     }
 }
-//===================================================================
+//=======================================================================================
 
 function checkPwd() {
     let PwdObj = document.getElementById("pass1");
@@ -53,7 +53,7 @@ function checkPwd() {
     else if (PwdObjLen <= 6)
         sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">密碼長度需大於6個字</span>`;
 }
-//===================================================================
+//=======================================================================================
 
 function checkDate() {
     let DateObj = document.getElementById("date1");
@@ -71,4 +71,76 @@ function checkDate() {
     else
         sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">無此日期</span>`;
 
+}
+
+//=======================================================================================
+
+//圖庫
+let images = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg"];
+let hrefs = ["https://reurl.cc/RrQjpe", "https://reurl.cc/d2vXEM", "https://reurl.cc/ErapEm", "https://reurl.cc/VDqjkZ", "https://reurl.cc/moNGE1"];
+document.getElementById(0).className = "selected";
+
+//選中的圖片附加邊框
+function choose() {
+    for (let i = 0; i < images.length; i++) {
+        document.getElementById(i).className = "unselected";
+    }
+    document.getElementById(index).className = "selected";
+}
+
+//圖片切換函數
+var index = 0;
+function nextImg(num) {
+    let imgObj = document.getElementById("myImg");
+    index += num;//計算圖片索引
+    if (index >= images.length)
+        index = 0;//回到第一張
+    else if (index < 0)
+        index = images.length - 1;
+    imgObj.src = images[index];
+    choose();
+    let a = document.getElementById("hpl");
+    a.href = hrefs[index];
+}
+
+//自動圖片切換函數
+function stop() {
+    window.clearInterval(intervalId);
+}
+function start() {
+    intervalId = window.setInterval("nextImg(1)", 3000);
+}
+
+//下方圖片條點擊函數
+function selectedPic(id) {
+    index = id
+    choose();
+    nextImg(0);
+    stop();
+    start();
+}
+
+//自動換圖片
+let intervalId = window.setInterval("nextImg(1)", 3000);
+
+//按鈕
+prevBtn = document.createElement("a");
+nextBtn = document.createElement("a");
+prevBtn.classList.add("prev");
+nextBtn.classList.add("next");
+slide.appendChild(prevBtn);
+slide.appendChild(nextBtn)
+prevBtn.addEventListener("click", function () { nextImg(-1) });
+nextBtn.addEventListener("click", function () { nextImg(1) });
+
+//滑鼠移至圖片上，暫停輪播
+slide = document.querySelector("#slide");
+slide.addEventListener("mouseover", stop);
+
+//滑鼠移開圖片，繼續進行輪播
+slide.addEventListener("mouseout", start);
+
+//圖片條點擊事件
+for (let i = 0; i < images.length; i++) {
+    document.getElementById(i).addEventListener("click", function () { selectedPic(i) });
 }
