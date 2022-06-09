@@ -69,6 +69,6 @@ function checkDate() {
         sp.innerHTML = `<i class="bi bi-check-circle"></i><span style="color:green">輸入正確</span>`;
     }
     else
-        sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">請輸入正確日期</span>`;
+        sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">無此日期</span>`;
 
 }
