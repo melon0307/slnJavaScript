@@ -69,8 +69,8 @@
   <ItemGroup>
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
     <Content Include="MSITLabSrc%2820220529%29\homework\Form_Check.html" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\homework.css" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\homework.js" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\css\homework.css" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\script\homework.js" />
     <Content Include="MSITLabSrc%2820220529%29\homework\Ninety-nine_multiplication_table.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.js" />
