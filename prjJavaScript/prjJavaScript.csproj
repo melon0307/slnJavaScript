@@ -153,6 +153,7 @@
     <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taichung.gif" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taipei.gif" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taoyuan.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\mapTest.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\01setTimeout.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\02setclock.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\0.gif" />

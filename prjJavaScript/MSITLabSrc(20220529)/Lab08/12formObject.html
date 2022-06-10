@@ -26,7 +26,13 @@
         document.querySelector("#idsubmit").addEventListener("click",submitf);
 
         function checkf() {
-
+            // console.log(document.forms.length) //1
+            //document.forms[0].elements.length == document.forms[0].length
+            let eles = document.forms[0].elements;
+            for (let ele of eles) {
+                if (ele.checked) //ele.checked =>true/false
+                    console.log(ele.value);
+            }
         }
 
         function resetf() {
@@ -34,7 +40,11 @@
         }
 
         function submitf() {
-
+            let name = document.getElementsByName("txtName")[0].value;
+            if (name == "")
+                document.querySelectorAll("#idsp")[0].innerHTML = "you must enter";
+            else
+                document.forms[0].submit();
         }
     </script>
 </body>

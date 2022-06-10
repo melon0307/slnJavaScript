@@ -9,8 +9,8 @@ public partial class MSITJSLab_Lab07_get : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        //string str = Request.QueryString["txtName"];
-        //string str = Request.Form["txtName"];        
+        //string str = Request.QueryString["txtName"]; //get
+        //string str = Request.Form["txtName"]; //post       
         string str = Request.Params["txtName"];
         Response.Write(str);
     }

@@ -11,7 +11,9 @@
 
     <script>
         //在文件的contextmenu事件，取消預設的動作(preventDefault)
-        
+        documnet.addEventListener("contextmenu", function () {
+            event.preverntDefault();
+        })
        
     </script>
 </body>

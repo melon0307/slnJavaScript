@@ -27,13 +27,13 @@
         }
 
         //取消事件氣泡bubbling(stopPropagation())
-        function divClick(event) {
-            window.alert("div");
-            
+        function divClick() {
+            window.alert("div");            
         }
 
         function pClick() {
             window.alert("p");
+            event.stopPropagation();//須寫在底層取消事件，若寫在欲取消的事件內，則還是會執行。
         }
 
         function hrefClick() {

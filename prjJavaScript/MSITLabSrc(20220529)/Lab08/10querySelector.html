@@ -13,12 +13,12 @@
 <body>
     <table>
         <tr>
-            <td id="td1">A1</td>
+            <td id="td1"><i>A1</i></td>
             <td class="myclass">B2</td>
             <td>C3</td>
         </tr>
         <tr>
-            <td>D4</td>
+            <td id="td1">D4</td>
             <td class="myclass">E5</td>
             <td>F6</td>
         </tr>
@@ -28,13 +28,27 @@
     
     <script>
         //使用document.getElementById()
-        
+        let gebi = document.getElementById("td1");
+        console.log(gebi);
 
         //使用document.querySelector()
-       
+        let qs1 = document.querySelector("td");
+        console.log(qs1);
+
+        let qs2 = document.querySelector(".myclass");
+        console.log(qs2);
+
+        let qs3 = document.querySelector("#td1");
+        console.log(qs3)
 
 
         //使用document.querySelectorAll()
+        let qsA1 = document.querySelectorAll("td");
+        console.log(qsA1);
+        console.log(qsA1[0]);
+        console.log(qsA1.item(0));
+        console.log(qsA1[0].innerHTML);//<i>A1</i>
+        console.log(qsA1[0].textContent);//A1
         
     </script>
 </body>

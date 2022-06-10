@@ -29,18 +29,18 @@
         let thebody=root.lastElementChild;  //BODY
         let theUl=thebody.firstElementChild.nextElementSibling.nextElementSibling;  //UL
         let theUlchilds=theUl.childElementCount;        
-        // console.log(theUl.childNodes);
+         console.log(theUl.childNodes);
         // console.log(theUl.childNodes[1].firstChild.nodeValue);
         // console.log(theUl.children);  //6
         // console.log(theUl.children[0].innerHTML)
         // console.log(theUl.firstElementChild);
 
-        // let childEl = theUl.firstElementChild;
-        // while ( childEl ) {
-        //     console.log(childEl);
-        //     console.log(childEl.innerHTML)
-        //     childEl = childEl.nextElementSibling;                    
-        // }
+         let childEl = theUl.firstElementChild;
+         while ( childEl ) {
+             console.log(childEl);
+             console.log(childEl.innerHTML)
+             childEl = childEl.nextElementSibling;                    
+         }
     </script>
 </body>
 </html>

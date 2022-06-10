@@ -45,28 +45,32 @@
 
         function dragStartHandler(e) {
             //儲存要拖放的資料
-
+            //alert(e.target.id)
+            e.dataTransfer.setData("text/plain", e.target.id);
         }
 
 
         function dragoverHandler(e) {
             //取消預設動作
+            e.preventDefault();
         }
 
         function dropHandler(e) {
             //取消預設動作
-
+            e.preventDefault();
             //取出拖放資料
-
+            let eleID = e.dataTransfer.getData("text/plain");
+           
             //建立div元素
-
+            let eleObj = document.getElementById(eleID);
+            let eleDiv = document.createElement("div");
+            eleDiv.innerHTML = eleObj.innerHTML;
 
             //設定屬性及外觀
-
-
+            eleDiv.setAttribute("class","dragItemStyle");
 
             //新增到dropZone or dropZone1元素後面
-
+            e.currentTarget.appendChild(eleDiv);
 
         }
     </script>
