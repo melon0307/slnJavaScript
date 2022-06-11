@@ -76,6 +76,8 @@
     <Content Include="MSITLabSrc%2820220529%29\homework\images\3.jpg" />
     <Content Include="MSITLabSrc%2820220529%29\homework\images\4.jpg" />
     <Content Include="MSITLabSrc%2820220529%29\homework\images\5.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\images\star.png" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\Rating.html" />
     <Content Include="MSITLabSrc%2820220529%29\homework\script\homework.js" />
     <Content Include="MSITLabSrc%2820220529%29\homework\Ninety-nine_multiplication_table.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />

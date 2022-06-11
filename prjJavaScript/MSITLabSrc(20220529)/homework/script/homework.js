@@ -1,4 +1,5 @@
-﻿function checkName() {
+﻿//===================================Form_Check================================================
+function checkName() {
     let NameObj = document.getElementById("name1");
     let NameObjVal = NameObj.value;
     let NameObjLen = NameObjVal.length;
@@ -22,7 +23,6 @@
             sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">姓名必須全部為中文</span>`
     }
 }
-//=======================================================================================
 
 function checkPwd() {
     let PwdObj = document.getElementById("pass1");
@@ -53,7 +53,6 @@ function checkPwd() {
     else if (PwdObjLen <= 6)
         sp.innerHTML = `<i class="bi bi-x-circle"></i><span style="color:red">密碼長度需大於6個字</span>`;
 }
-//=======================================================================================
 
 function checkDate() {
     let DateObj = document.getElementById("date1");
@@ -73,7 +72,7 @@ function checkDate() {
 
 }
 
-//=======================================================================================
+//===================================Advertisement=============================================
 
 //圖庫
 let images = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg"];
@@ -144,3 +143,6 @@ slide.addEventListener("mouseout", start);
 for (let i = 0; i < images.length; i++) {
     document.getElementById(i).addEventListener("click", function () { selectedPic(i) });
 }
+
+//===================================Rating====================================================
+

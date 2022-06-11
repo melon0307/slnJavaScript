@@ -34,6 +34,7 @@
 .bi-x-circle {
     color: red
 }
+
 .tb1 {
     margin: auto;
     border: 3px #66B3FF solid;
@@ -45,6 +46,7 @@
 .td1 {
     border: 3px #66B3FF solid
 }
+
 .container {
     margin: 0 auto;
     width: 1080px;
@@ -114,4 +116,46 @@
     #slide .next:after {
         transform: rotate(45deg);
         margin-right: 4px;
+    }
+
+section.ratingForm {
+    height: 100vh;
+}
+
+.ratingBox {
+    margin: 0 30%;
+}
+
+    .ratingBox h1, h3 {
+        text-align: center;
+    }
+
+.stars {
+    display: flex
+}
+
+    .stars a {
+        filter: grayscale(100%);
+        cursor: pointer;
+        padding: 2px;
+    }
+
+        .stars a img {
+            width: 100%;
+        }
+
+    .stars:hover a {
+        filter: grayscale(0%);
+    }
+
+    .stars a:hover {
+        filter: grayscale(0%);
+    }
+
+        .stars a:hover ~ a {
+            filter: grayscale(100%);
+        }
+
+    .stars a.active {
+        filter: grayscale(0%);
     }
