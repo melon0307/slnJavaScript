@@ -77,9 +77,13 @@ function checkDate() {
 let index = 0, // 圖片索引
     slide = document.querySelector("#slide"),
     items = slide.querySelectorAll("img"), // 抓取所有slide內img
-    timer = 3000,
+    timer = 4000,
     interval = window.setInterval(showNext, timer),  // 循環
-    botimgs = document.querySelectorAll("#div2 img");
+    botimgs = document.querySelectorAll("#div2 img"),
+    container = document.querySelector(".container"),
+    a = slide.querySelectorAll("a"),
+    url = ["https://reurl.cc/8oL5GX", "https://reurl.cc/41vXR2", "https://reurl.cc/0pl626", "https://reurl.cc/LmLXpa", "https://reurl.cc/ErLXpa"];
+
 
 // 按鈕
 prevBtn = document.createElement("a");
@@ -96,6 +100,14 @@ let ShowCurrentImg = function () {
     });
     items[index].classList.add("show");
     pick();
+    href();
+}
+
+// slide圖片點擊事件
+function href() {
+    a.forEach((img) => {
+        img.href = url[index]
+    });
 }
 
 // 下一張圖
@@ -118,14 +130,13 @@ function showPrev() {
 function stop() {
     interval = clearInterval(interval);
 }
-slide.addEventListener("mouseover", stop);
+container.addEventListener("mouseover", stop);
 
 // 滑鼠離開圖片上方時，重新開始循環計時
 function start() {
     interval = window.setInterval(showNext, timer);
 }
-slide.addEventListener("mouseout", start);
-
+container.addEventListener("mouseout", start);
 
 // 綁定點擊上一張，下一張按鈕的事件
 nextBtn.addEventListener("click", showNext, false);
@@ -134,6 +145,7 @@ prevBtn.addEventListener("click", showPrev, false);
 // 網頁開啟時show出第一張圖
 items[0].classList.add("show");
 botimgs[0].classList.add("selected");
+href();
 
 // 為下方目前顯示的圖片加上外框
 function pick() {
@@ -148,8 +160,7 @@ function selectedPic() {
     index = this.id;
     pick();
     ShowCurrentImg();
-    stop();
-    start();
+    stop();    
 }
 botimgs.forEach((botimg) => {
     botimg.addEventListener("click", selectedPic)
