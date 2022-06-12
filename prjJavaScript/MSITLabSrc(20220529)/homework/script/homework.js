@@ -74,75 +74,86 @@ function checkDate() {
 
 //===================================Advertisement=============================================
 
-//圖庫
-let images = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg"];
-let hrefs = ["https://reurl.cc/RrQjpe", "https://reurl.cc/d2vXEM", "https://reurl.cc/ErapEm", "https://reurl.cc/VDqjkZ", "https://reurl.cc/moNGE1"];
-document.getElementById(0).className = "selected";
+let index = 0, // 圖片索引
+    slide = document.querySelector("#slide"),
+    items = slide.querySelectorAll("img"), // 抓取所有slide內img
+    timer = 3000,
+    interval = window.setInterval(showNext, timer),  // 循環
+    botimgs = document.querySelectorAll("#div2 img");
 
-//選中的圖片附加邊框
-function choose() {
-    for (let i = 0; i < images.length; i++) {
-        document.getElementById(i).className = "unselected";
-    }
-    document.getElementById(index).className = "selected";
-}
-
-//圖片切換函數
-var index = 0;
-function nextImg(num) {
-    let imgObj = document.getElementById("myImg");
-    index += num;//計算圖片索引
-    if (index >= images.length)
-        index = 0;//回到第一張
-    else if (index < 0)
-        index = images.length - 1;
-    imgObj.src = images[index];
-    choose();
-    let a = document.getElementById("hpl");
-    a.href = hrefs[index];
-}
-
-//自動圖片切換函數
-function stop() {
-    window.clearInterval(intervalId);
-}
-function start() {
-    intervalId = window.setInterval("nextImg(1)", 3000);
-}
-
-//下方圖片條點擊函數
-function selectedPic(id) {
-    index = id
-    choose();
-    nextImg(0);
-    stop();
-    start();
-}
-
-//自動換圖片
-let intervalId = window.setInterval("nextImg(1)", 3000);
-
-//按鈕
+// 按鈕
 prevBtn = document.createElement("a");
 nextBtn = document.createElement("a");
 prevBtn.classList.add("prev");
 nextBtn.classList.add("next");
 slide.appendChild(prevBtn);
-slide.appendChild(nextBtn)
-prevBtn.addEventListener("click", function () { nextImg(-1) });
-nextBtn.addEventListener("click", function () { nextImg(1) });
+slide.appendChild(nextBtn);
 
-//滑鼠移至圖片上，暫停輪播
-slide = document.querySelector("#slide");
+// 目前顯示圖片
+let ShowCurrentImg = function () {
+    items.forEach((img) => {
+        img.classList.remove("show");
+    });
+    items[index].classList.add("show");
+    pick();
+}
+
+// 下一張圖
+function showNext() {
+    index++;
+    if (index >= items.length)
+        index = 0;
+    ShowCurrentImg();
+}
+
+// 上一張圖
+function showPrev() {
+    index--;
+    if (index < 0)
+        index = items.length - 1;
+    ShowCurrentImg();
+}
+
+// 滑鼠移到圖片上方時，停止循環計時
+function stop() {
+    interval = clearInterval(interval);
+}
 slide.addEventListener("mouseover", stop);
 
-//滑鼠移開圖片，繼續進行輪播
+// 滑鼠離開圖片上方時，重新開始循環計時
+function start() {
+    interval = window.setInterval(showNext, timer);
+}
 slide.addEventListener("mouseout", start);
 
-//圖片條點擊事件
-for (let i = 0; i < images.length; i++) {
-    document.getElementById(i).addEventListener("click", function () { selectedPic(i) });
+
+// 綁定點擊上一張，下一張按鈕的事件
+nextBtn.addEventListener("click", showNext, false);
+prevBtn.addEventListener("click", showPrev, false);
+
+// 網頁開啟時show出第一張圖
+items[0].classList.add("show");
+botimgs[0].classList.add("selected");
+
+// 為下方目前顯示的圖片加上外框
+function pick() {
+    botimgs.forEach((botimg) => {
+        botimg.classList.remove("selected");
+    });
+    botimgs[index].classList.add("selected");
 }
+
+// 下方圖片點擊事件
+function selectedPic() {
+    index = this.id;
+    pick();
+    ShowCurrentImg();
+    stop();
+    start();
+}
+botimgs.forEach((botimg) => {
+    botimg.addEventListener("click", selectedPic)
+});
 
 //===================================Rating====================================================
 
