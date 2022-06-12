@@ -81,7 +81,7 @@ let index = 0, // 圖片索引
     interval = window.setInterval(showNext, timer),  // 循環
     botimgs = document.querySelectorAll("#div2 img"),
     container = document.querySelector(".container"),
-    a = slide.querySelectorAll("a"),
+    hyperlink = slide.querySelector("#hyperlink"),
     url = ["https://reurl.cc/8oL5GX", "https://reurl.cc/41vXR2", "https://reurl.cc/0pl626", "https://reurl.cc/LmLXpa", "https://reurl.cc/ErLXpa"];
 
 
@@ -105,8 +105,8 @@ let ShowCurrentImg = function () {
 
 // slide圖片點擊事件
 function href() {
-    a.forEach((img) => {
-        img.href = url[index]
+    hyperlink.addEventListener("click", () => {
+        window.location.href = url[index]
     });
 }
 
