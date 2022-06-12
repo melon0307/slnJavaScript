@@ -37,7 +37,7 @@
                     }
                     //索引大於CurrentStar，則復原
                     else {
-                        star2.className = "";
+                        star2.classList.remove("active");
                     }
                 });
                 labels[0].innerHTML = `您評分為${clickedIdx + 1}顆星`;
