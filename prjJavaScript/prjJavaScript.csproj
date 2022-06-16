@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\Date.html" />
     <Content Include="MSITLabSrc%2820220529%29\homework\Advertisement.html" />
     <Content Include="MSITLabSrc%2820220529%29\homework\Form_Check.html" />
     <Content Include="MSITLabSrc%2820220529%29\homework\css\homework.css" />
