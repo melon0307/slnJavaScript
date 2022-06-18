@@ -68,19 +68,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\Date.html" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\Advertisement.html" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\Form_Check.html" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\css\homework.css" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\images\1.jpg" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\images\2.jpg" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\images\3.jpg" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\images\4.jpg" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\images\5.jpg" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\images\star.png" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\Rating.html" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\script\homework.js" />
-    <Content Include="MSITLabSrc%2820220529%29\homework\Ninety-nine_multiplication_table.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業一\Ninety-nine_multiplication_table.css" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業一\Ninety-nine_multiplication_table.js" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業三\Rating.css" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業三\Rating.js" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業二\Form_Check.css" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業二\Form_Check.js" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業五\Date.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業五\Date.js" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\Advertisement.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業二\Form_Check.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\homepage.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\images\1.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\images\2.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\images\3.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\images\4.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\images\5.jpg" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業三\images\star.png" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業三\Rating.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業一\Ninety-nine_multiplication_table.html" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\Advertisement.css" />
+    <Content Include="MSITLabSrc%2820220529%29\homework\作業四\Advertisement.js" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.js" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\02getElementContent.html" />
@@ -234,6 +242,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

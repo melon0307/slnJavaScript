@@ -1,56 +1,7 @@
-﻿.st1 {
-    width: 90%;
-    border-bottom: 3px dashed #BEBEBE;
-    padding-bottom: 10px;
-    margin: 20px
-}
-
-.fs1 {
-    width: 40%;
-    margin: 5% auto;
-    border: 5px solid red;
-    border-radius: 20px
-}
-
-.lg1 {
-    font-weight: bold;
-    margin-left: 10px;
-    font-size: 20px
-}
-
-.lb1 {
-    color: gray
-}
-
-.t1 {
-    width: 100px;
-    text-align: center
-}
-
-.bi-check-circle {
-    color: green
-}
-
-.bi-x-circle {
-    color: red
-}
-
-.tb1 {
-    margin: auto;
-    border: 3px #66B3FF solid;
-    border-collapse: collapse;
-    background-color: #CAFFFF;
-    color: red
-}
-
-.td1 {
-    border: 3px #66B3FF solid
-}
-
-.container {
+﻿.container {
     margin: 0 auto;
     width: 1080px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #slide {
@@ -135,45 +86,3 @@
     float: left;
     width: 214px;
 }
-
-section.ratingForm {
-    height: 100vh;
-}
-
-.ratingBox {
-    margin: 0 30%;
-}
-
-    .ratingBox h1, h3 {
-        text-align: center;
-    }
-
-.stars {
-    display: flex
-}
-
-    .stars a {
-        filter: grayscale(100%);
-        cursor: pointer;
-        padding: 2px;
-    }
-
-        .stars a img {
-            width: 100%;
-        }
-
-    .stars:hover a {
-        filter: grayscale(0%);
-    }
-
-    .stars a:hover {
-        filter: grayscale(0%);
-    }
-
-        .stars a:hover ~ a {
-            filter: grayscale(100%);
-        }
-
-    .stars a.active {
-        filter: grayscale(0%);
-    }

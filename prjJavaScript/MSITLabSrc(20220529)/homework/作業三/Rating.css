@@ -1,0 +1,41 @@
+﻿section.ratingForm {
+    height: 100vh;
+}
+
+.ratingBox {
+    margin: 0 30%;
+}
+
+    .ratingBox h1, h3 {
+        text-align: center;
+    }
+
+.stars {
+    display: flex
+}
+
+    .stars a {
+        filter: grayscale(100%);
+        cursor: pointer;
+        padding: 2px;
+    }
+
+        .stars a img {
+            width: 100%;
+        }
+
+    .stars:hover a {
+        filter: grayscale(0%);
+    }
+
+    .stars a:hover {
+        filter: grayscale(0%);
+    }
+
+        .stars a:hover ~ a {
+            filter: grayscale(100%);
+        }
+
+    .stars a.active {
+        filter: grayscale(0%);
+    }

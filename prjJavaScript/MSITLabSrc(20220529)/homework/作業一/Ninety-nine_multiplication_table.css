@@ -1,0 +1,12 @@
+﻿.tb1 {
+    font-size:24px;
+    margin: auto;
+    border: 3px #66B3FF solid;
+    border-collapse: collapse;
+    background-color: #CAFFFF;
+    color: red
+}
+
+.td1 {
+    border: 3px #66B3FF solid
+}
